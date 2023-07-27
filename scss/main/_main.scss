@@ -1,0 +1,62 @@
+section{
+    width: 100%;
+    background-color: #eee;
+    padding: 200px 0 150px;
+    .inner{
+        width: 1180px;
+        margin: 0 auto;
+        h1{
+            text-align: center;
+            font: bold 22px/1 "arial";
+            color: #333;
+            margin-bottom: 10px;
+        }
+        &>h2{
+            text-align: center;
+            font: normal 16px/1 "arial";
+            margin-bottom: 80px;
+            color: #666;
+        }
+        .wrap{
+            width: 100%;
+            &::after{
+                content: '';
+                display: block;
+                clear: both;
+            }
+            article{
+                width: 280px;
+                float: left;
+                margin-right: 20px;
+                &:last-child{
+                    margin-right: 0;
+                }
+                .pic{
+                    width: 100%;
+                    height: 120px;
+                    background-color: #222;
+                    margin-bottom: 20px;
+                }
+                h2{
+                    font: bold 16px/1 "arial";
+                    color: #555;
+                    margin-bottom: 10px;
+                }
+                p{
+                    font: 13px/1.3 "arial";
+                    color: #888;
+                    margin-bottom: 20px;
+                }
+                a{
+                    display: block;
+                    width: 100px;
+                    height: 30px;
+                    text-align: center;
+                    font: 13px/30px "arial";
+                    color: red;
+                    border: 1px solid black;
+                }
+            }
+        }
+    }
+}
